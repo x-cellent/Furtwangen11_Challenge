@@ -22,7 +22,7 @@ public class CIDR {
 	 * @return the CIDR instance, throws a appropriate Exception on malformed or illegal input.
 	 */
 	public static CIDR of(String cidrNotation) {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
@@ -35,56 +35,56 @@ public class CIDR {
 	 * @return a CIDR instance.
 	 */
 	public static CIDR of(InetAddress inetAddress, Integer mask) {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the Address part of this CIDR.
 	 */
 	public String getAddress() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the Mask (0 - 32) of this CIDR.
 	 */
 	public Integer getMask() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the Network address of this CIDR
 	 */
 	public CIDR getNetwork() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the BroadCast Address of this CIDR
 	 */
 	public CIDR getBroadCast() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the amount of Addresses available in this network.
 	 */
 	public Long getAddresses() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the next IP in this Network throws a Exception if there is no ip left.
 	 */
 	public CIDR getNext() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
 	 * @return the previoud IP in this Network throws a Exception if there is no ip left.
 	 */
 	public CIDR getPrevious() {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
 	}
 
 	/**
@@ -95,7 +95,20 @@ public class CIDR {
 	 * @return true if the given cidr is inside this cidr, otherwise false.
 	 */
 	public boolean contains(CIDR cidr) {
-		throw new IllegalAccessError("Please implement");
+		throw new IllegalArgumentException("Please implement");
+	}
+
+	/**
+	 * This returns a String representation of this CIDR with a appropriate formatting. So that a
+	 * given CIDR for example 1.2.3.4/24 will return 1.2.3.0/24.
+	 * 
+	 * /32 CIDRs can ommit the trailing mask.
+	 * 
+	 * @see java.lang.Object#toString()
+	 */
+	@Override
+	public String toString() {
+		throw new IllegalArgumentException("Please implement");
 	}
 
 }
