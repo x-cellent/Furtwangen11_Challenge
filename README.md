@@ -8,7 +8,7 @@ For example we often have to calculate the next IP in a given Network, or check 
 To make the long story short, try to implement the missing parts in the given challenge.
 As a start you can have a look at:
 
-http://http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
 to get all the glory Details about CIDR.
  
 How does this challenge work ?
